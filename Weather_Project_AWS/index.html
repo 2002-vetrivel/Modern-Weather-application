@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Nova Weather App - Get accurate and detailed weather forecasts for any location. Powered by AWS and developed by Vetri.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Nova-Weather</title>
+</head>
+<body id="bgbg">
+    <div id="left">
+        <p>Nova Weather</p>
+        <div id="content">
+            <div id="degree">
+                <h1></h1>
+            </div>
+            <div id="place">
+                <h1></h1>
+                <p></p>
+            </div>
+            <div id="weatherLogo">
+                <img id="weatherIcon" src="" alt="Weather Icon" style="display: none;">
+            </div>
+        </div>
+    </div>
+    <div id="right">
+        <div id="search">
+            <input type="text" name="text" id="searching" placeholder="Search Location...">
+            <img src="images/search.png" alt="search" id="go">
+        </div>
+        <div id="result" class="hidden">
+            <h1 style="width: 80%; font-size: 25px; font-weight: lighter; opacity: 0.9;" id="what"></h1>
+            <div id="details">
+                <div class="detail-row">
+                    <p>Temp max</p><span id="tempMax">--°</span>
+                    <img src="images/max.png" alt="Max Temp Icon" class="image-placeholder">
+                </div>
+                <div class="detail-row">
+                    <p>Temp min</p>
+                    <span id="tempMin">--°</span>
+                    <img src="images/min.png" alt="Min Temp Icon" class="image-placeholder">
+                </div>
+                <div class="detail-row">
+                    <p>Humidity</p>
+                    <span id="humidity">--%</span>
+                    <img src="images/humidity.png" alt="Humidity Icon" class="image-placeholder">
+                </div>
+                <div class="detail-row">
+                    <p>Cloudy</p>
+                    <span id="cloudiness">--%</span>
+                    <img src="images/cloudy.png" alt="Wind Icon" class="image-placeholder">
+
+                </div>
+                <div class="detail-row">
+                    <p>Wind</p>
+                    <span id="wind">-- km/h</span>
+                    <img src="images/wind.png" alt="Wind Icon" class="image-placeholder">
+                </div>
+            </div>
+            
+        </div>
+        <div id="Dev">
+            Powered by AWS | developed by Vetri
+        </div>
+    </div>
+</body>
+</html>

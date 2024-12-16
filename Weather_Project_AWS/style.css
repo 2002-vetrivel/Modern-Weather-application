@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    height: 100vh;
+    min-height: 100vh; 
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/bg.jpeg');
+    background-position: center top; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+#left {
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    color: white;
+}
+
+#left h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+#right {
+    width: 30%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;  
+    align-items: center; 
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+}
+
+#search {
+    display: flex;
+    background: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    width: 80%;
+    margin-bottom: 20px;  
+}
+
+#searching {
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid ghostwhite;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    color: ghostwhite; 
+    background: none;
+}
+
+#searching::placeholder {
+    font-size: 18px;
+    font-weight: lighter;
+    color: ghostwhite; 
+}
+
+#search img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#search img:hover {
+    transform: scale(1.2);
+}
+
+#content {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    font-family: sans-serif;
+    font-weight: lighter;
+    align-items: center;
+    margin-top: auto;
+}
+.hidden {
+    display: none !important;
+}
+
+#degree h1 {
+    font-size: 140px;
+    font-weight: lighter; 
+}
+
+#place h1 {
+    font-size: 60px;
+    font-weight: lighter;  
+}
+
+#place p {
+    font-size: 15px;
+    font-weight: lighter; 
+}
+
+#weatherLogo img {
+    width: 70px;
+}
+
+#result {
+    margin-left: 30px;
+    width: 100%;  
+    margin-top: 20px;
+    color: ghostwhite;  
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+#details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    opacity: 0.8;
+}
+
+.detail-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 10px;
+}
+#images {
+    display: flex;
+    margin-top: 10px;
+}
+
+.image-placeholder {
+    margin-left: -160px;
+    width: 20px;
+    height: 20px;
+}
+
+#Dev 
+{
+    position: relative;
+    margin-top: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-style: italic;
+    color: ghostwhite;
+}
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+        background-position: center top; 
+        flex-direction: column;
+        align-items: center;
+    }
+    #content 
+    {
+        margin-top: 150px;
+        margin-left: -140px;
+    }
+    #left p 
+    {
+        margin: 10px;
+    }
+    #left, #right {
+        width: 90%;
+        padding: 10px;
+    }
+    
+    #left 
+    {
+        margin-left: 30px;
+    }
+    #right
+    {
+        border-radius: 5px;
+        height: 490px;
+        margin-bottom: 10px;
+    }
+    
+    #degree h1 {
+        font-size: 80px;
+    }
+
+    #place h1 {
+        font-size: 30px;
+    }
+
+    #place p {
+        font-size: 10px;
+    }
+
+    #searchs {
+        width: 90%;
+        margin-top: 20px;
+    }
+   
+
+    #searchs input[type="text"] {
+        font-size: 14px;
+    }
+
+    #weatherLogo img {
+        width: 50px;
+    }
+    .detail-row {
+        padding: 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    #degree h1 {
+        font-size: 80px;
+    }
+    #place h1 {
+        font-size: 30px;
+    }
+    
+    #place p {
+        font-size: 10px;
+    }
+    body {
+        background-size: cover;
+        background-position: center top;
+    }
+    .detail-row {
+        padding: 2px;
+    }
+}
+.hidden {
+    display: none;
+}
